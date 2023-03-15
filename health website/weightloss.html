@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- =============== FAVICON ===============-->
+        <link rel="shortcut icon" href="images/fatladysitting.jpg" type="image/x-icon"> 
+
+        <!--=============== REMIX ICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="weightloss.css">
+
+        <title>fix diet</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">
+                    <i class="#"></i> fix diet
+                </a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="index.html"class="nav__link active-link">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="index.html" class="nav__link">About</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="index.html" class="nav__link">Services</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="index.html" class="nav__link">FAQs</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="index.html" class="nav__link">Contact Us</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-line"></i>
+                    </div>
+                </div>
+
+                <div class="nav__btns">
+                    <!-- Theme change button -->
+                    <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-menu-line"></i>
+                    </div>
+                </div>
+                <div class="nav__btns">
+                    <!-- Theme change button -->
+                   <a href="getstarted.html">
+                    <i class="ri-user-3-line" id="theme-button"></i>
+
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-menu-line"></i>
+
+                   </a> 
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home" id="home">
+                <div class="home__container container grid">
+                    <img src="#" alt="" class="home__img">
+
+                    <div class="home__data">
+                        <h1 class="home__title">
+                            WEIGHT LOSS
+                        </h1>
+                        <p class="home__description">
+                            This is where you get your preffered weight Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus, optio!
+                        </p>
+                        <a href="#bmi" class="button button--flex">
+                            Start your journey <i class="ri-arrow-right-down-line button__icon"></i>
+                        </a>
+                    </div>
+
+                    <div class="home__social">
+                        <span class="home__social-follow">Follow Us</span>
+
+                        <div class="home__social-links">
+                            <a href="https://www.facebook.com/" target="_blank" class="home__social-link">
+                                <i class="ri-facebook-fill"></i>
+                            </a>
+                            <a href="https://www.instagram.com/" target="_blank" class="home__social-link">
+                                <i class="ri-instagram-line"></i>
+                            </a>
+                            <a href="https://twitter.com/" target="_blank" class="home__social-link">
+                                <i class="ri-twitter-fill"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="before-bmi">
+                <h1 class="weight_header">CONTROL YOUR WEIGHT </h1>
+                <p class="weight_description">Changing the way you approach weight loss can help you be more successful at weight management.
+                     Most people who are trying to lose weight focus on just the goal of weight loss. However, setting the right goals and focusing on lifestyle changes such as following a healthy eating plan, watching portion sizes, being physically active, and reducing sedentary time are much more effective.</p>
+
+            </section>
+              <!-- calculate  bmi -->
+     <div class="container" id="bmi">
+        <div class="boxed">
+          <h1>BMI Calculator</h1>
+          <div class="content">
+
+
+            <div class="input">
+                <label for="height">Age</label>
+                <input type="text" class="text-input" id="age" autocomplete="off" required/>
+            </div>
+        <div class="gender">
+
+                <label class="container">
+                    <input type="radio" name="radio" id="m"><p class="text">Male</p>
+                    <span class="checkmark"></span>
+                  </label>
+
+
+                <label class="container">
+                    <input type="radio" name="radio" id="f" ><p class="text">Female</p>
+                      <span class="checkmark"></span>
+                    </label>
+
+            </div>
+
+            <div class="containerHW">
+            <div class="inputH">
+              <label for="height">Height(cm)</label>
+              <input type="number" id="height" required>
+            </div>
+
+            <div class="inputW">
+              <label for="weight">Weight(kg)</label>
+              <input type="number" id="weight" required>
+            </div>
+          </div>
+
+            <button class="calculate" id="submit" onclick="calculate();">Calculate BMI</button>
+          </div>
+          <div class="result">
+            <p>Your BMI is</p>
+            <div id="result">00.00</div>
+            <p class="comment"></p>
+          </div>
+          
+
+        </div>
+      </div>
+      <div class="space4">
+        <h1>----------------</h1>
+      </div>
+      <div class="bmi-caterogies">
+        <h1 class="bmi-title">BMI Categories:</h1>
+        <p>
+            <button>Underweight =< 18.5</button> <br> 
+            Normal weight = 18.5–24.9 <br>
+            Overweight = 25–29.9 <br>
+            Obesity = BMI of 30 or greater</p>
+      </div>
+           
+        
+        <script src="welcome.js"></script>
+    </body>
+</html>
