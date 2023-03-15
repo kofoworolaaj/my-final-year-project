@@ -637,8 +637,8 @@ the website, in dark theme
   font-size: medium;
   color:black;
   text-align: center;
-  padding-left: 200px;
-  padding-right: 200px;
+  padding-left: 300px;
+  padding-right: 300px;
 }
 
 
@@ -648,9 +648,8 @@ the website, in dark theme
 
 
   .boxed {
-   
+    margin-top: 100px;
     width: 100%;
-    
     background:#FFF;
     border-radius: 10px;
     text-align: center;
@@ -1005,14 +1004,14 @@ border: 2px solid red;
     background-color: black;
   }
 
-.space4{
-      color: #000;
-}
+
 
   /*----bmi caterogies*/
   .bmi-caterogies{
-    background-color: var(--first-color)
+    background-color: var(--first-color);
+    margin-top: 200px;
       }
+
       .bmi-title{
         color: #fff;
       }

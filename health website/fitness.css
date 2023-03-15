@@ -308,7 +308,7 @@ the website, in dark theme
     background:linear-gradient(rgba(0,0,0,.3),rgba(31, 30, 30, 0.3)),url(images/istockphoto-1415178374-612x612.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height:300px;
+    height:400px;
   
 
 }
@@ -320,14 +320,16 @@ the website, in dark theme
 
 
 .home__title{
-    color:var(--first-color);
+    color: white;
   font-size: var(--big-font-size);
   line-height: 140%;
+  text-transform: capitalize;
+  margin-top: 50px;
  
 }
 
 .home__description{
-    color:var(--first-color);
+  color: white;
   margin-bottom: var(--mb-2-5);
 }
 
@@ -421,6 +423,7 @@ the website, in dark theme
   padding: 9rem 3rem 5rem; 
   border-radius: 1rem;
   width: 100%;
+  background-position: 100% 100% cover;
 }
 
 .steps__container{
@@ -436,6 +439,8 @@ the website, in dark theme
   background-color: #FFF;
   padding: 2.5rem 3rem 2rem 1.5rem;
   border-radius: 1rem;
+  height: 100%;
+
 }
 
 .steps__card-number{
@@ -479,6 +484,7 @@ the website, in dark theme
   }
   .home__title{
     font-size: var(--h1-font-size);
+    color: white;
   }
 
   .steps__bg{
@@ -589,6 +595,7 @@ the website, in dark theme
   }
   .home__img{
     width: 350px;
+    
   }
   .home__description{
     padding-right: 7rem;

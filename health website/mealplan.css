@@ -323,11 +323,12 @@ the website, in dark theme
     color:var(--first-color);
   font-size: var(--big-font-size);
   line-height: 140%;
+  text-transform: capitalize;
  
 }
 
 .home__description{
-    color:var(--first-color);
+    color: white;
   margin-bottom: var(--mb-2-5);
 }
 
@@ -479,6 +480,7 @@ the website, in dark theme
   }
   .home__title{
     font-size: var(--h1-font-size);
+  text-transform: capitalize;
   }
 
   .steps__bg{
