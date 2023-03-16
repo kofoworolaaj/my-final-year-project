@@ -308,10 +308,11 @@ the website, in dark theme
     background:linear-gradient(rgba(0,0,0,.3),rgba(31, 30, 30, 0.3)),url(images/istockphoto-1415178374-612x612.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height:400px;
+    height:400px;}
   
 
-}
+
+
 
 .home__container{
   position: relative;
@@ -330,6 +331,19 @@ the website, in dark theme
 
 .home__description{
   color: white;
+  margin-bottom: var(--mb-2-5);
+}
+.home__title1{
+    color:var(--first-color);
+  font-size: var(--big-font-size);
+  line-height: 140%;
+  text-transform: capitalize;
+  margin-top: 50px;
+ 
+}
+
+.home__description1{
+  color:var(--first-color);
   margin-bottom: var(--mb-2-5);
 }
 
@@ -419,7 +433,7 @@ the website, in dark theme
 
 /*=============== STEPS ===============*/
 .steps__bg{
-  
+  margin-top: -150px;
   padding: 9rem 3rem 5rem; 
   border-radius: 1rem;
   width: 100%;
@@ -429,45 +443,41 @@ the website, in dark theme
 .steps__container{
   gap: 3rem;
   padding-top: 1PX;
-}
-
-.steps__title{
-  color:var(--first-color);
-}
-
-.steps__card{
-  background-color: #FFF;
-  padding: 2.5rem 3rem 2rem 1.5rem;
-  border-radius: 1rem;
-  height: 100%;
 
 }
-
-.steps__card-number{
-  display: inline-block;
-  background-color: var(--first-color-alt);
-  color: #FFF;
-  padding: .5rem .75rem;
-  border-radius: .25rem;
-  font-size: var(--h2-font-size);
-  margin-bottom: var(--mb-1-5);
-  transition: .3s;
+.section__title-center{
+  font-size:40px;
+  color: var(--first-color);
+  font-weight: 900;
+}
+.para{
+  
+  font-size: medium;
+  color: black;
+  font-weight: 100;
+  padding-left: 10px;
+  padding-right: 10px;
+  
+}
+.para1{
+  margin-top: -70px;
+  font-size: medium;
+  color: black;
+  font-weight: 100;
+  padding-left: 10px;
+  padding-right: 10px;
+  
+}
+.list{
+  color: black;
+}
+.exercise{
+  font-size:30px;
+  color: var(--first-color);
+  font-weight: 900
 }
 
-.steps__card-title{
-  font-size: var(--h3-font-size);
-  margin-bottom: var(--mb-0-5);
-  color: #FFF;
-}
 
-.steps__card-description{
-  font-size: var(--small-font-size);
-  color: #FFF;
-}
-
-.steps__card:hover .steps__card-number{
-  transform: translateY(-.25rem);
-}
 
 
 
