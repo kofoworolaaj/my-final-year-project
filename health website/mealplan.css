@@ -449,6 +449,11 @@ the website, in dark theme
 }
 .list{
   color: black;
+  line-height: 35px;
+}
+.detoxplan{
+  font-size: 40px;
+  font-weight: bold;
 }
 
 
