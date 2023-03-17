@@ -455,7 +455,9 @@ the website, in dark theme
   font-size: 40px;
   font-weight: bold;
 }
-
+img{
+  size: 50px;
+}
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
