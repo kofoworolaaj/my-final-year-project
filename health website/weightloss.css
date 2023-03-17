@@ -640,7 +640,49 @@ the website, in dark theme
   padding-left: 300px;
   padding-right: 300px;
 }
+.para{
+  margin-top: -60px;
+  line-height: 45px;
+  font-size: medium;
+  color: black;
+  font-weight: 100;
+  padding-left: 10px;
+  padding-right: 10px;
+  
+}
+.para1{
+  font-size: medium;
+  color: black;
+  font-weight: 100;
+  padding-left: 10px;
+  padding-right: 10px;
+  
+}
+.section__title-center{
+  margin-top: -90px;
+  font-size:40px;
+  color: var(--first-color);
+  font-weight: 900;
+}
+.section__title-center1{
+  font-size:40px;
+  color: var(--first-color);
+  font-weight: 900;
+}
+.bmititle{
+  font-weight: bolder;
+}
 
+
+  /*----bmi caterogies*/
+  .bmi-caterogies{
+  
+    margin-top: 200px;
+      }
+
+      .bmi-title{
+        color: #fff;
+      }
 
 /*-----------------------------calculate-------------------*/
 /* Import Google Font - Poppins */
@@ -1005,13 +1047,3 @@ border: 2px solid red;
   }
 
 
-
-  /*----bmi caterogies*/
-  .bmi-caterogies{
-    background-color: var(--first-color);
-    margin-top: 200px;
-      }
-
-      .bmi-title{
-        color: #fff;
-      }
