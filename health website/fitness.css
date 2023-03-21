@@ -450,13 +450,22 @@ the website, in dark theme
   color: var(--first-color);
   font-weight: 900;
 }
+.section__title-center{
+  font-size:60px;
+  color: var(--first-color);
+  font-weight: 900;
+  margin-top: 50px;
+  text-align: justify;
+}
 .para{
+  
   line-height: 45px;
   font-size: medium;
   color: black;
   font-weight: 100;
   padding-left: 10px;
   padding-right: 10px;
+  margin-bottom: 30px;
   
 }
 .para1{
@@ -465,8 +474,8 @@ the website, in dark theme
   font-size: medium;
   color: black;
   font-weight: 100;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 35px;
+ 
   
 }
 .list{

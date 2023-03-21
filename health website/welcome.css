@@ -393,6 +393,19 @@ the website, in dark theme
 }
 
 .button--flex{
+  margin-top: 30px;
+  display: inline-flex;
+  align-items: center;
+  column-gap: .5rem;
+}
+.button--flex1{
+  margin-top: 10PX;
+  display: inline-flex;
+  align-items: center;
+  column-gap: .5rem;
+}
+.button--flex2{
+  margin-top: 70PX;
   display: inline-flex;
   align-items: center;
   column-gap: .5rem;

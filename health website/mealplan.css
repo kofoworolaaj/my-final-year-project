@@ -432,7 +432,7 @@ the website, in dark theme
 }
 
 .para{
-
+  margin-top: 30px;
   font-size:larger;
   color: black;
   font-weight: 100;
@@ -456,9 +456,27 @@ the website, in dark theme
   font-weight: bold;
 }
 img{
+  margin-top: 15px;
   size: 50px;
 }
-
+.detoxplan{
+  margin-top: 30px;
+  color: var(--first-color);
+  font-size: 30px;
+  font-weight: 900;
+}
+h2{
+  color: var(--first-color);
+  font-size: 30px;
+  text-decoration: dashed;
+  text-transform:capitalize;
+}
+h3{
+  color: var(--first-color);
+  font-size: 20px;
+  text-decoration: dashed;
+  text-transform:capitalize;
+}
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 @media screen and (max-width: 320px){
