@@ -448,6 +448,7 @@ the website, in dark theme
   padding-right: 10px;
 }
 .list{
+   margin-top: 10px;
   color: black;
   line-height: 35px;
 }
@@ -468,14 +469,21 @@ img{
 h2{
   color: var(--first-color);
   font-size: 30px;
-  text-decoration: dashed;
-  text-transform:capitalize;
+   text-transform:capitalize;
+  margin-top: 30px;
+  text-decoration: underline;
+
 }
 h3{
+  margin-top: 20px;
   color: var(--first-color);
   font-size: 20px;
   text-decoration: dashed;
   text-transform:capitalize;
+}
+ol{
+  margin-top: 10px;
+  padding-left: 50px;
 }
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
