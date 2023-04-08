@@ -93,6 +93,9 @@
                         <a href="#services" class="button button--flex">
                             Start your journey <i class="ri-arrow-right-down-line button__icon"></i>
                         </a>
+                      
+                        <input type="button" class="button" style="cursor: pointer;" id="printTable" value="Print Users Data"/>
+
                     </div>
 
                     <div class="home__social">
@@ -126,6 +129,23 @@
                         
                  
                 </div>
+
+                <script type="text/javascript">
+                    function printData()
+    {
+      
+        var divToPrint=document.getElementById("users");
+        newWin= window.open("");
+        newWin.document.write(divToPrint.outerHTML);
+        newWin.document.close();
+        newWin.print();
+        //newWin.close();
+    }
+
+    document.querySelector("#printTable").addEventListener("click", function(){
+      printData();
+    });
+                </script>
            
         
         <script src="welcome.js"></script>
