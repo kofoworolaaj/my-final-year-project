@@ -12,10 +12,11 @@
 
         <!--=============== CSS ===============-->
         <link rel="stylesheet" href="weightloss.css">
+        <link rel="stylesheet" href="dropdown.css">
 
         <title>AJFITZ</title>
     </head>
-    <body>
+    <body onload="isNotLoggedIn(); bmiChecker(); stateChecker()">
         <!--==================== HEADER ====================-->
         <header class="header" id="header">
             <nav class="nav container">
@@ -57,14 +58,18 @@
                 </div>
                 <div class="nav__btns">
                     <!-- Theme change button -->
-                   <a href="getstarted.html">
-                    <i class="ri-user-3-line" id="theme-button"></i>
-
-                    <div class="nav__toggle" id="nav-toggle">
-                        <i class="ri-menu-line"></i>
-
-                   </a> 
-                    </div>
+                    <div class="dropdown">
+                        <button onclick="dropdownFunction()" class="dropbtn ri-user-3-line">
+                        
+                        </button>
+                        <div id="myDropdown" class="dropdown-content">
+                          <a href="welcome.html">Dashboard</a>
+                          <div id="state1"> 
+                            <a href="admin.html">Administrator</a>
+                              </div>
+                          <a href="#" onclick="isLogout()">Log out</a>
+                        </div>
+                      </div>
                 </div>
             </nav>
         </header>
@@ -111,7 +116,7 @@
 
             </section>
               <!-- calculate  bmi -->
-     <div class="container" id="bmi">
+     <div class="container" id="#bmi">
         <div class="boxed">
           <h1>BMI Calculator</h1>
           <div class="content">
@@ -202,5 +207,31 @@
            
         
         <script src="weightloss.js"></script>
+        <script src="dropdown.js"></script>
+        <script type="text/javascript" src="/health website/connection/auth.js" ></script>
+
+        <script type="text/javascript">
+      
+            async function bmiChecker () {
+          const userID = localStorage.getItem("userID");
+          const userBMI = localStorage.getItem("userBMI");
+          
+          
+          if (!userBMI){
+             fetch(`http://localhost:3105/user/view/${userID}`)
+              .then(response => response.json()).then(data=>{
+              // console.log(data)
+              localStorage.setItem('userBMI',data.bmi)
+               })
+                setTimeout(() => {
+                window.location="index.html";
+                }, 3000);
+          
+          } else {
+            console.log("BMI already exist")
+          } 
+          
+          }
+          </script>
     </body>
 </html>

@@ -12,10 +12,11 @@
 
         <!--=============== CSS ===============-->
         <link rel="stylesheet" href="mealplan.css">
+        <link rel="stylesheet" href="dropdown.css">
 
         <title>AJFITZ</title>
     </head>
-    <body>
+    <body onload="isNotLoggedIn(); stateChecker()">
         <!--==================== HEADER ====================-->
         <header class="header" id="header">
             <nav class="nav container">
@@ -56,16 +57,21 @@
                     </div>
                 </div>
                 <div class="nav__btns">
-                    <!-- Theme change button -->
-                   <a href="getstarted.html">
-                    <i class="ri-user-3-line" id="theme-button"></i>
-
-                    <div class="nav__toggle" id="nav-toggle">
-                        <i class="ri-menu-line"></i>
-
-                   </a> 
+                  <!-- Theme change button -->
+                  <div class="dropdown">
+                    <button onclick="dropdownFunction()" class="dropbtn ri-user-3-line">
+                        
+                    </button>
+                      <div id="myDropdown" class="dropdown-content">
+                        <a href="welcome.html">Dashboard</a>
+                        <div id="state1"> 
+                          <a href="admin.html">Administrator</a>
+                            </div>
+                        <a href="weightloss.html">BMI calculator</a>
+                        <a href="#" onclick="isLogout()">Log out</a>
+                      </div>
                     </div>
-                </div>
+              </div>
             </nav>
         </header>
 
@@ -451,5 +457,8 @@
         
             
         <script src="welcome.js"></script>
+        <script src="dropdown.js"></script>
+        <script type="text/javascript" src="/health website/connection/auth.js" ></script>
+
     </body>
 </html>

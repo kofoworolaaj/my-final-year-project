@@ -12,10 +12,11 @@
 
         <!--=============== CSS ===============-->
         <link rel="stylesheet" href="fitness.css">
+        <link rel="stylesheet" href="dropdown.css">
 
         <title>AJFitz</title>
     </head>
-    <body>
+    <body onload="isNotLoggedIn(); stateChecker()">
         <!--==================== HEADER ====================-->
         <header class="header" id="header">
             <nav class="nav container">
@@ -57,14 +58,19 @@
                 </div>
                 <div class="nav__btns">
                     <!-- Theme change button -->
-                   <a href="getstarted.html">
-                    <i class="ri-user-3-line" id="theme-button"></i>
-
-                    <div class="nav__toggle" id="nav-toggle">
-                        <i class="ri-menu-line"></i>
-
-                   </a> 
-                    </div>
+                    <div class="dropdown">
+                        <button onclick="dropdownFunction()" class="dropbtn ri-user-3-line">
+                        
+                        </button>
+                        <div id="myDropdown" class="dropdown-content">
+                          <a href="welcome.html">Dashboard</a>
+                          <div id="state1"> 
+                            <a href="admin.html">Administrator</a>
+                              </div>
+                          <a href="weightloss.html">BMI calculator</a>
+                          <a href="#" onclick="isLogout()">Log out</a>
+                        </div>
+                      </div>
                 </div>
             </nav>
         </header>
@@ -219,5 +225,8 @@ Let's get started
             </section>
 
         <script src="fitness.css"></script>
+        <script src="dropdown.js"></script>
+        <script type="text/javascript" src="/health website/connection/auth.js" ></script>
+
     </body>
 </html>

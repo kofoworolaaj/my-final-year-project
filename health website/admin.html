@@ -13,10 +13,11 @@
         <!--=============== CSS ===============-->
         <link rel="stylesheet" href="welcome.css">
         <link rel="stylesheet" href="dropdown.css">
+        <link rel="stylesheet" href="table.css">
 
-        <title>AJFITZ</title>
+        <title>AJFITZ Administrator</title>
     </head>
-    <body onload="isNotLoggedIn(); stateChecker()">
+    <body onload="isNotLoggedIn(); isNotAdmin()">
         <!--==================== HEADER ====================-->
         <header class="header" id="header">
             <nav class="nav container">
@@ -63,9 +64,7 @@
                         
                     </button>
                         <div id="myDropdown" class="dropdown-content">
-                            <div id="state1"> 
-                          <a href="admin.html">Administrator</a>
-                            </div>
+                          <a href="welcome.html">Dashboard</a>
                           <a href="weightloss.html">BMI calculator</a>
                           <a href="#" onclick="isLogout()">Log out</a>
                         </div>
@@ -78,11 +77,11 @@
             <!--==================== HOME ====================-->
             <section class="home" id="home">
                 <div class="home__container container grid">
-                    <img src="images/istockphoto-1372798207-612x612.jpg" alt="" class="home__img">
+                    <img src="https://www.herzing.edu/sites/default/files/styles/fp_960_640/public/2020-09/become-health-administrator.jpg.webp?itok=K74I11vk" alt="" class="home__img">
 
                     <div class="home__data">
                         <h1 class="home__title" id="allUsers">
-                            WELCOME!
+                         Admin Home
                             
                             <p id="userName"></p>
                         </h1>
@@ -91,7 +90,6 @@
                             Your current BMI report = 
                             <i id="userBMI"></i>
                         </p>
-                        
                         <a href="#services" class="button button--flex">
                             Start your journey <i class="ri-arrow-right-down-line button__icon"></i>
                         </a>
@@ -115,52 +113,20 @@
                 </div>
             </section>
              <!--==================== STEPS ====================-->
-             <section class="steps section container" id="services">
+            
                 
-                <div class="steps__bg">
+                <div class="steps__bgTable">
                     <h2 class="section__title-center steps__title">
-                        Steps to start your <br> plan off right
+                       Total Users
                     </h2>
 
-                    <div class="steps__container grid">
-                        <div class="steps__card">
-                            <div class="steps__card-number">01</div>
-                            <h3 class="steps__card-title">Weight loss</h3>
-                            <p class="steps__card-description">
-                                This gives information about young adult that wants to lose weight. calculation of BMI is also available.Achieving healthy weight loss isn't about a “diet” or “program” but a lifestyle with healthy eating patterns, regular physical activity
-                            </p>
-                            <a href="weightloss.html" class="button button--flex1">
-                                Get started <i class="ri-arrow-right-down-line button__icon"></i>
-                            </a>
-                        </div>
-
-                        <div class="steps__card">
-                            <div class="steps__card-number">02</div>
-                            <h3 class="steps__card-title">Fitness/exercise</h3>
-                            <p class="steps__card-description">
-                                Are you trying to create a new workout plan?
-
-                                Looking for the best workouts for overweight beginners? Here, you'll be able to meet your goals and start feeling the benefits.
-                            </p>
-                            <a href="fitness.html" class="button button--flex2">
-                                Get started <i class="ri-arrow-right-down-line button__icon"></i>
-                            </a>
-                        </div>
-
-                        <div class="steps__card">
-                            <div class="steps__card-number">03</div>
-                            <h3 class="steps__card-title">Meals plan</h3>
-                            <p class="steps__card-description">
-                                Although it's not easy to lose weight to get below the obesity threshold, there are a variety of tried-and-true tactics that can help you along the path toward losing weight, including creating a healthy meal plan for obesity.
-                            </p>
-                            <a href="mealplan.html" class="button button--flex">
-                                Get started <i class="ri-arrow-right-down-line button__icon"></i>
-                            </a>
-                        </div>
+                        <div class="table-wrapper">
+                            <table id="users" class="fl-table"></table>
+                            </div>
                         
-                    </div>
+                 
                 </div>
-            </section>
+           
         
         <script src="welcome.js"></script>
         <script src="dropdown.js"></script>

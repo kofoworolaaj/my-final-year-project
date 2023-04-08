@@ -428,6 +428,11 @@ the website, in dark theme
   padding: 3rem 2rem 2rem;
   border-radius: 1rem;
 }
+.steps__bgTable{
+  background-color: var(--first-color);
+  padding: 3rem 1rem 1rem;
+  /* border-radius: 1rem; */
+}
 
 .steps__container{
   gap: 2rem;
@@ -483,6 +488,7 @@ the website, in dark theme
   .home__title{
     font-size: var(--h1-font-size);
   }
+  
 
   .steps__bg{
     padding: 2rem 1rem;
@@ -681,4 +687,11 @@ the website, in dark theme
   .scrollup{
     right: 3rem;
   }
+}
+
+
+#userName {
+  text-transform: capitalize;
+  font-size: 28px;
+  color: red;
 }

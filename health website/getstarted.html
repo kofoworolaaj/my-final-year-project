@@ -15,7 +15,7 @@
 
         <title>fix diet</title>
     </head>
-    <body>
+    <body onload="isLoggedIn()">
         <!--==================== HEADER ====================-->
         <header class="header" id="header">
             <nav class="nav container">
@@ -69,7 +69,7 @@
             <div class="box">
               <div class="inner-box">
                 <div class="forms-wrap">
-                  <form action="welcome.html" autocomplete="off" class="sign-in-form">
+                  <form method="POST" autocomplete="off" id="sign-in-form" class="sign-in-form">
                     <div class="logo">
                       <img src="#" alt="" />
                       <h4>AJFITZ</h4>
@@ -84,19 +84,21 @@
                     <div class="actual-form">
                       <div class="input-wrap">
                         <input
-                          type="text"
+                          type="email"
+                          id="email"
                           minlength="4"
                           class="input-field"
                           autocomplete="off"
                           required
                         />
-                        <label>Username</label>
+                        <label>Email</label>
                       </div>
       
                       <div class="input-wrap">
                         <input
                           type="password"
-                          minlength="4"
+                          id="password"
+                          minlength="6"
                           class="input-field"
                           autocomplete="off"
                           required
@@ -113,7 +115,7 @@
                     </div>
                   </form>
       
-                  <form action="welcome.html" autocomplete="off" class="sign-up-form">
+                  <form method="POST"  autocomplete="off" id="sign-up-form" class="sign-up-form">
                     <div class="logo">
                       <img src="#" alt="" />
                       <h4>AJFITZ</h4>
@@ -129,6 +131,7 @@
                       <div class="input-wrap">
                         <input
                           type="text"
+                          id="fullname"
                           minlength="4"
                           class="input-field"
                           autocomplete="off"
@@ -140,6 +143,7 @@
                       <div class="input-wrap">
                         <input
                           type="email"
+                          id="fullemail"
                           class="input-field"
                           autocomplete="off"
                           required
@@ -150,6 +154,7 @@
                       <div class="input-wrap">
                         <input
                           type="password"
+                          id="fullpassword"
                           minlength="4"
                           class="input-field"
                           autocomplete="off"
@@ -161,6 +166,7 @@
                       <div class="input-wrap">
                         <input
                           type="password"
+                          id="fullcopassword"
                           minlength="4"
                           class="input-field"
                           autocomplete="off"
@@ -258,6 +264,12 @@
 
        
         
-        <script src="get.js"></script>
+        <script async src="get.js"></script>
+
+        <script type="text/javascript" src="/health website/connection/login.js" ></script>
+        <script type="text/javascript" src="/health website/connection/create-user.js" ></script>
+        <script type="text/javascript" src="/health website/connection/auth.js" ></script>
+    
      </body>
-    </html>
+
+     </html>
