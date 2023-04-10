@@ -22,7 +22,7 @@ form.addEventListener("submit", function (e) {
         name: fullname,
         bmi: 0,
         email: fullemail,
-        role: newRole,
+        role: "user",
         password: fullpassword,
       }),
       headers: {
