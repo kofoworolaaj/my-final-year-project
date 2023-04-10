@@ -11,18 +11,29 @@ form.addEventListener("submit", function (e) {
   if (fullpassword !== fullcopassword) {
     alert("Password does not match!");
   } else {
-    // if (fullname === "admin" || "administrator" || "Admin" || "Administrator") {
-    //   var newRole = "admin";
-    // } else {
-    //   var newRole = "user";
-    // }
+    if (fullname === "admin") {
+      var newRole = "admin";
+    } else if (fullname === "administrator") {
+      var newRole = "admin";
+    } else if (fullname === "Admin") {
+      var newRole = "admin";
+    } else if (fullname === "Administrator") {
+      var newRole = "admin";
+    } else if (fullname === "ADMIN") {
+      var newRole = "admin";
+    } else if (fullname === "ADMINISTRATOR") {
+      var newRole = "admin";
+    } else {
+      var newRole = "user";
+    }
+
     fetch("http://localhost:3105/user/create", {
       method: "POST",
       body: JSON.stringify({
         name: fullname,
         bmi: 0,
         email: fullemail,
-        role: "user",
+        role: newRole,
         password: fullpassword,
       }),
       headers: {
