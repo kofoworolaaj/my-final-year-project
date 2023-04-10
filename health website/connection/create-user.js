@@ -11,11 +11,11 @@ form.addEventListener("submit", function (e) {
   if (fullpassword !== fullcopassword) {
     alert("Password does not match!");
   } else {
-    if (fullname === "admin" || "administrator" || "Admin" || "Administrator") {
-      var newRole = "admin";
-    } else {
-      var newRole = "user";
-    }
+    // if (fullname === "admin" || "administrator" || "Admin" || "Administrator") {
+    //   var newRole = "admin";
+    // } else {
+    //   var newRole = "user";
+    // }
     fetch("http://localhost:3105/user/create", {
       method: "POST",
       body: JSON.stringify({
